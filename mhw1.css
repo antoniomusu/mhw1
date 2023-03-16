@@ -1,0 +1,43 @@
+html,body{
+    margin:0;
+    font-family: Arial, Helvetica, sans-serif;
+
+}
+
+.frame{
+    display: flex;
+    height: 100vh;
+    width: 100vw;
+    
+
+}
+.navbar{
+    display: flex;
+    flex-flow: column;
+    color: #fefefe;
+    background-color:#333333;
+    width: 256px;
+    
+
+}
+
+.content{
+    overflow-y: auto;
+    background-color: #89CE94;
+    flex-grow: 1;
+}
+
+.navbar .entry{
+    text-decoration: none;
+    font-size: x-large;
+    color: inherit;
+    padding: 0.5em;
+    text-align: center;
+    transition: 250ms;
+
+
+}
+.navbar a.entry:hover{
+    background-color: #EAC435;
+    color: black;
+}
