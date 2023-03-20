@@ -18,7 +18,7 @@ body {
     /*Espande in modo sensato*/
 }
 
-.header>div {
+.header>div.flextitle {
     /*Selettore per figli diretti*/
     display: flex;
     position: absolute;
