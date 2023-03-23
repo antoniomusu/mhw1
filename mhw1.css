@@ -13,7 +13,6 @@ body {
     background-image: url("istockphoto-846236786-612x612.jpg");
     background-size: cover;
     /*Espande in modo sensato*/
-    margin-bottom: 60px;
 }
 
 .header> .flextitle {
@@ -37,14 +36,14 @@ body {
 #menu {
     display: none;
     margin-left: 10px;
-    margin-top: -20px;
+    margin-top: 40px;
     }
     
 #menu div {
     width: 25px;
     height: 3px;
     background-color: #5C6B73;
-    margin: 5px 0;
+    margin-top: 5px;
     }
 
 .navbar {
@@ -54,11 +53,13 @@ body {
     background-color: #5C6B73;
     width: 10em;
     border-right: solid #E0FBFC 3px;
+    justify-content: center;
     /*Ancoro al lato sinistro la navbar anche in navigazione */
     position: fixed;
     top: 0;
     bottom: 0;
     left: 0;
+
 }
 
 .navbar a.entry {
@@ -75,10 +76,25 @@ body {
     color: #5C6B73;;
 }
 
-img.entry {
+.logo{
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 60px;
+    margin-top:-50px;
+}
+.logo img {
     border-radius: 100%;
     border: solid 5px #EAC435;
-    margin:1em;
+    width: auto;
+    height: 100px;
+    z-index: 1;
+    
+}
+.logo div{
+    font-size: 1em;
+    color:#5C6B73;
+    font-family: 'Source Serif Pro', serif;
 }
 
 .content{
@@ -196,6 +212,11 @@ img.entry {
 
     .footer img{
         position: static;
+    }
+
+    .logo{
+        margin-bottom:60px;
+        margin-top:-6em;
     }
 }
 @media(min-width:1300px){
