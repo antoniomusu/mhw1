@@ -8,11 +8,13 @@ body {
 
 .header {
     position: relative;
-    /*Modifica il comportamento dei figli rispetto alla posizione dell'header*/
+    /*Modifica il comportamento dei figli rispetto all'header*/
     height: 500px;
     background-image: url("istockphoto-846236786-612x612.jpg");
     background-size: cover;
     /*Espande in modo sensato*/
+    border-bottom:solid #E0FBFC 3px;
+
 }
 
 .header> .flextitle {
@@ -30,7 +32,7 @@ body {
 
 .flextitle h1{
     max-width: 780px;
-   
+    color:#E0FBFC;
 }
 
 #menu {
@@ -53,7 +55,7 @@ body {
     background-color: #5C6B73;
     width: 10em;
     border-right: solid #E0FBFC 3px;
-    justify-content: center;
+    justify-content: top;
     /*Ancoro al lato sinistro la navbar anche in navigazione */
     position: fixed;
     top: 0;
@@ -62,6 +64,9 @@ body {
 
 }
 
+.navbar img{
+    margin: 2.5em;
+}
 .navbar a.entry {
     text-decoration: none;
     font-size: 1.5em;
@@ -80,26 +85,45 @@ body {
     display:flex;
     flex-direction: column;
     align-items: center;
-    margin-bottom: 60px;
     margin-top:-50px;
 }
+
 .logo img {
     border-radius: 100%;
-    border: solid 5px #EAC435;
+    border: solid 3px #E0FBFC;
     width: auto;
     height: 100px;
     z-index: 1;
     
 }
 .logo div{
-    font-size: 1em;
+    font-size: 1.3em;
     color:#5C6B73;
     font-family: 'Source Serif Pro', serif;
+    font-style: italic;
+    font-weight: bolder;
+}
+
+.logo a:visited{
+    color: #5C6B73;
 }
 
 .content{
     width: 66.67%;
     margin:auto;
+}
+
+.flexrow{
+    margin-top: 60px;
+    display: flex;
+    flex-direction: row;
+    justify-content: left;
+    gap:40px;
+    margin-left: -60px;
+}
+
+.flexrow .number{
+    opacity: 40%;
 }
 
 .article {
@@ -118,6 +142,7 @@ body {
     height: 280px;
     object-fit: contain; /*Dispone l'immagine in modo da essere contenuta nel box predisposto sopra*/
     margin-top: 20px;
+    margin-bottom: 60px;
 }
 
 .title {
@@ -130,6 +155,7 @@ body {
 .text {
     margin-top:20px;
     text-align: justify;
+    margin-bottom: 20px;
 }
 
 .references {
@@ -138,13 +164,9 @@ body {
     text-align: right;
 }
 
-.link {
+.link, .nome a {
     text-decoration: none;
     /*Tolgo la sottolineatura*/
-}
-
-.link:visited{
-    color: #79D64D;
 }
 
 .footer {
@@ -155,6 +177,7 @@ body {
     line-height: 20px;
     text-align: center;
     padding: 2em 0;
+    border-top: solid #E0FBFC 3px;;
     margin-top: 4em;
     bottom:0;
     display: flex;
@@ -218,12 +241,16 @@ body {
         margin-bottom:60px;
         margin-top:-6em;
     }
+    .flexrow{
+        margin-left: 0;
+        gap: 10px;
+    }
 }
 @media(min-width:1300px){
     .navbar {
         width: 14em;
     }
     .navbar .entry {
-        font-size: 1.7em;
+        font-size: 1.5em;
     }
 }
