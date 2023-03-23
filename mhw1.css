@@ -127,6 +127,10 @@ img.entry {
     /*Tolgo la sottolineatura*/
 }
 
+.link:visited{
+    color: #79D64D;
+}
+
 .footer {
     position: relative;
     background-color: #253237;
